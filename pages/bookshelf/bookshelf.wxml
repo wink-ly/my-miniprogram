@@ -1,0 +1,8 @@
+<image class="top" src="../../images/book.jpeg" alt="" mode="aspectFill"/>
+<view class="container2">
+  <view class="nodata" wx:if="{{book.length==0}}">快去选点书吧</view>
+  <view class="book" wx:for="{{book}}" wx:key="index" bindtap="gotoInfo" data-info="{{book[index].bookid}}">
+    <image src="{{book[index].img}}" class="img_book" mode="aspectFill"></image>
+    <text class="name_book">{{book[index].book_name}}</text>
+  </view>
+</view>

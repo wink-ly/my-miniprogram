@@ -1,0 +1,13 @@
+<!--pages/list/list.wxml-->
+<scroll-view>
+  <view class="book" wx:for="{{list}}" wx:key="id" bindtap="gotoInfo" data-info="{{item.bookid}}">
+    <image class="book_img" src="{{item.img}}" mode="aspectFill"></image>
+    <view class="info">
+      <text class="book_title">{{item.book_name}}</text>
+      <text class="book_pub" decode>【作者】&nbsp;{{item.author}}</text>
+      <text class="book_pub" decode>【出版社】{{item.publish}}</text>
+      <text class="book_idu" decode>&nbsp;&nbsp;&nbsp;{{item.introduction==null?'暂无简介':item.introduction}}</text>
+    </view>
+  </view>
+</scroll-view>
+<text class="bottom">--我是有底线的--</text>

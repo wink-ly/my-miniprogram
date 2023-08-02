@@ -1,0 +1,23 @@
+<!--pages/category/category.wxml-->
+<view class="container">
+  <!-- 左侧一级列表栏（显示类别） -->
+  <scroll-view class="left">
+    <view class="listname" wx:for="{{cateList}}" wx:key="index" bindtap="activeChange" data-index="{{index}}">
+      <view class="{{index == active ? 'active' : ''}}">{{item.name}}</view>
+    </view>
+  </scroll-view>
+  <!-- 右侧二级列表栏（显示书籍信息） -->
+  <scroll-view class="right" scroll-y style="height: 100vh" bindscrolltolower="onReachBottom">
+    <view class="shop-item" wx:for="{{bookList}}" wx:key="id" bindtap="gotoInfo" data-info="{{item.bookid}}">
+      <!-- 左侧图片 -->
+      <image class="book_img" src="{{item.img}}" mode="aspectFill"></image>
+      <view class="info"><!-- 右侧信息 -->
+        <text class="book_title">{{item.book_name}}</text>
+        <text class="book_author">【作者】{{item.author}}</text>
+        <text class="book_pub">【出版社】{{item.publish}}</text>
+        <text class="book_idu" decode>&nbsp;&nbsp;&nbsp;{{item.introduction==null?'暂无简介':item.introduction}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+

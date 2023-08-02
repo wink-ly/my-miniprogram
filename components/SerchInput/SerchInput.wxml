@@ -1,0 +1,5 @@
+<!--components/SerchInput/SerchInput.wxml-->
+<view class="serch_input">
+  <image src="../../images/home/serch.png" class="pic"></image>
+  <text class="text">搜索</text>
+</view>

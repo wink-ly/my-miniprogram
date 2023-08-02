@@ -1,0 +1,53 @@
+image {
+  height: 25vh;
+  width: 100%;
+}
+
+.form {
+  margin: 10px;
+}
+
+input {
+  color: #000;
+  height: 50px;
+  border-bottom: 1px solid;
+  font-size: 18px;
+}
+
+.btn {
+  background-color: #00b26a;
+  width: 40%;
+  margin-top: 20px;
+}
+
+.option_box {
+  position: absolute;
+  width: 100%;
+  overflow-y: auto;
+  background: #fff;
+  transition: height 0.3s;
+  z-index: 999;
+}
+
+.option {
+  display: block;
+  font-size: 18px;
+  border-bottom: 1px solid #efefef;
+  padding: 5px;
+}
+
+.test{
+  display: flex;
+}
+
+.yan_text{
+  width: 100%;
+}
+
+.yan_btn{
+  position: absolute;
+  color: #000;
+  margin-right: 10px;
+  right: 0;
+  z-index: 999;
+}

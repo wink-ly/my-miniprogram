@@ -1,0 +1,25 @@
+<!--pages/share/share.wxml-->
+<image src="../../images/home/view.jpg" mode="aspectFill" />
+<view class="form">
+  <form action="" bindsubmit="submit">
+    <input type="text" placeholder="书名" name="book_name" value="{{book_name}}" />
+    <input type="text" placeholder="作者" name="author" value="{{author}}" />
+    <input type="text" placeholder="出版社" name="publish" value="{{publish}}" />
+    <view>
+      <view catchtap='selectTap'>
+        <input placeholder="选择分类" name="category" value="{{category[index]}}" disabled>{{category[index]}}</input>
+      </view>
+      <view class='option_box' style='height:{{show?174:0}}px;'>
+        <text class='option' wx:for='{{category}}' wx:key='key' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+      </view>
+    </view>
+    <form bindsubmit="yan">
+      <input type="number" placeholder="号码" name="tel" value="{{tel}}" />
+      <view class="test">
+        <input class="yan_text" type="number" placeholder="验证码" name="yan" value="{{yan}}" />
+        <button class="yan_btn" form-type="submit">发送验证码</button>
+      </view>
+    </form>
+    <button form-type="submit" class="btn">提交</button>
+  </form>
+</view>

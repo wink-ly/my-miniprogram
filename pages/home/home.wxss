@@ -1,0 +1,151 @@
+.top_serch {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  background: #23b47a;
+}
+
+.localpic {
+  align-items: center;
+  display: flex;
+  margin-left: 6%;
+}
+
+.pic {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.location {
+  font-size: 30rpx;
+  align-items: center;
+  display: flex;
+  margin-left: 6rpx;
+}
+
+.container1 {
+  height: 350rpx;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), #23b47a);
+}
+
+swiper {
+  margin-top: 35rpx;
+}
+
+swiper swiper-item image {
+  width: 100%;
+  height: 95%;
+  border-radius: 30rpx;
+  position: relative;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, .8)
+}
+
+.active {
+  transform: none;
+  transition: all 0.2s ease-in 0s;
+}
+
+.layout {
+  transform: scale(0.8333333);
+  /* 改变元素显示比例 */
+  transition: all 0.2s ease-in 0s;
+}
+
+.container2 {
+  width: 100%;
+  height: 180rpx;
+  display: flex;
+}
+
+.mid {
+  width: 33%;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.share {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.container3 {
+  width: 95%;
+  height: 380rpx;
+  border-radius: 25rpx;
+  margin: auto;
+  margin-top: 25rpx;
+  background-color: #fff;
+}
+
+.c3text {
+  width: 90%;
+  position: relative;
+  margin: auto;
+  padding: 20rpx;
+}
+
+.c3t1 {
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.c3t2 {
+  font-size: 26rpx;
+  float: right;
+  margin-top: 5rpx;
+}
+
+.c3pic {
+  width: 26rpx;
+  height: 26rpx;
+  float: right;
+  margin-top: 10rpx;
+}
+
+.rec_book {
+  display: flex;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  display: none
+}
+
+.book {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img_book {
+  width: 150rpx;
+  height: 210rpx;
+  border-radius: 15rpx;
+}
+
+.name_book {
+  text-align: center;
+  width: 150rpx;
+  margin-top: 5rpx;
+  font-weight: lighter;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container5 {
+  width: 95%;
+  height: 350rpx;
+  border-radius: 25rpx;
+  margin: auto;
+  margin-top: 50rpx;
+  background-color: #fff;
+}

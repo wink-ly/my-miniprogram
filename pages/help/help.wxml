@@ -1,0 +1,11 @@
+<!--pages/help/help.wxml-->
+<view class="main">
+  <view class="list" wx:for="{{question}}" wx:key="index">
+    <view class="title" catchtap="showTap" data-index='{{index}}'>
+      <text>{{item.question}}</text>
+    </view>
+    <view class="answer" wx:if="{{choose == index}}">
+      <text decode>&nbsp;&nbsp;&nbsp;&nbsp;{{item.answer}}</text>
+    </view>   
+  </view>
+</view>

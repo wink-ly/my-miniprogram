@@ -1,0 +1,34 @@
+<view class="container1">
+  <image class="pic" src="{{booklist.img}}" ></image>
+</view>
+<view class="container2">
+  <view class="block">
+    <text>书名：</text>
+    <text style="margin-left: 10%;font-weight: bold;">{{booklist.book_name}}</text>
+  </view>
+  <view class="block">
+    <text>作者：</text>
+    <text style="margin-left: 10%;">{{booklist.author}}</text>
+  </view>
+  <view class="block">
+    <text>出版社：</text>
+    <text style="margin-left: 5%;">{{booklist.publish}}</text>
+  </view>
+  <view class="block">
+    <text>图书分类：</text>
+    <text style="margin-left: 1%;">{{booklist.category}}类</text>
+  </view>
+  <view class="block">
+    <text>馆藏数量：</text>
+    <text style="margin-left: 1%;">{{booklist.count}}本</text>
+  </view>
+  <view class="intro">
+    <text style="font-weight: bold;">内容简介</text>
+    <text style="margin-top: 15rpx;" decode>&nbsp;&nbsp;&nbsp;{{booklist.introduction==null?'暂无简介':booklist.introduction}}</text>
+  </view>
+</view>
+<text class="bottom">--我是有底线的--</text>
+<view class="tabbar" style="height: 50px;">
+  <view class="add" bindtap="{{save == false ? 'addBook' : 'deletebook'}}">{{save == false ? add : delete }}</view>
+  <view class="read" bindtap="readBook">阅读</view>
+</view>

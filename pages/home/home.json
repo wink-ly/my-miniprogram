@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "SerchInput":"../../components/SerchInput/SerchInput"
+  },
+  "backgroundTextStyle": "dark",
+  "navigationStyle": "custom"
+}

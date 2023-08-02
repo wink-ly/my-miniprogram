@@ -1,0 +1,26 @@
+<view class="nav"></view>
+<button class="btn_img" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+  <image class="img" src="{{userinfo.avatarUrl}}"></image>
+</button>
+<input type="nickname" class="nickname" placeholder="{{userinfo.nickName}}" bindinput='getValue' placeholder-class="placeholder-style" />
+
+<view class="time">
+  <text decode>累计阅读&nbsp;&nbsp;{{min}}分钟</text>
+  <text decode>累计登录&nbsp;&nbsp;{{userDay}}天</text>
+</view>
+
+<view class="container" bindtap="gotoFeedback">
+  <view class="help">
+    <image src="../../images/personal/help.png" alt="" />
+    <text>读者反馈</text>
+  </view>
+  <image src="../../images/more.png" alt="" />
+</view>
+
+<view class="container" bindtap="gotoAbout">
+  <view class="about">
+    <image src="../../images/personal/about.png" alt="" />
+    <text>关于我们</text>
+  </view>
+  <image src="../../images/more.png" alt="" />
+</view>

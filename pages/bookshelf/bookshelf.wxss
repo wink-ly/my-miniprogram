@@ -1,0 +1,43 @@
+.top {
+  width: 100%;
+  height: 20vh;
+}
+
+.container2 {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.nodata {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book {
+  width: 33%;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img_book {
+  width: 180rpx;
+  height: 250rpx;
+  box-shadow: 0 2px 50rpx rgba(185, 176, 176, 0.8);
+  border-radius: 15rpx;
+}
+
+.name_book {
+  text-align: center;
+  margin-top: 5rpx;
+  width: 180rpx;
+  font-weight: lighter;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

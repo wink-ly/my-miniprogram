@@ -1,0 +1,18 @@
+.serch_input{
+  padding: 10rpx;
+  background-color: white;
+  border-radius: 50rpx;
+  display: flex;
+}
+.pic{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  margin-left: 5rpx;
+  margin-top: 4rpx;
+}
+.text{
+  font-size: 32rpx;
+  margin-left: 50rpx;
+  color: rgb(145, 146, 146);
+}

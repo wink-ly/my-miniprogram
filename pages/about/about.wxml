@@ -1,0 +1,5 @@
+<view class="main">
+  <text decode>&nbsp;&nbsp;&nbsp;{{text1}}</text>
+  <text decode>&nbsp;&nbsp;&nbsp;{{text2}}</text>
+  <text decode>&nbsp;&nbsp;&nbsp;{{text3}}</text>
+</view>

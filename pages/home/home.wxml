@@ -1,0 +1,62 @@
+<!-- 上方位置信息以及搜索框区域 -->
+<view class="top_serch" style="height: {{navheight}}px;">
+  <view class="localpic" style="margin-top: {{serchheight}}px;">
+    <image class="pic" src="../../images/home/location.png"></image>
+  </view>
+  <text class="location" style="margin-top: {{serchheight}}px;">{{city}}</text>
+  <navigator url="/pages/serch/serch" open-type="navigate" style="position: absolute;width: 44%;margin-top:{{serchheight}}px;height:{{jnheight}}px;margin-left:28%;">
+    <SerchInput style="margin-top:{{serchheight}}px;height:{{jnheight}}px"></SerchInput>
+  </navigator>
+</view>
+<!-- 轮播图 -->
+<view class="container1">
+  <swiper autoplay interval="3000" duration="1000" circular bindchange="handleChange" previous-margin="70rpx" next-margin="70rpx" style='height: {{swiperHeight}}px'>
+    <block wx:for="{{swiperList}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item.image}}" class="{{swiperIdx == index ? 'active' : 'layout'}}" mode='aspectFill'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="container2">
+  <view class="mid">
+    <image class="share" src="../../images/home/book.png" bindtap="gotoBooklist"></image>
+    <text>书单</text>
+  </view>
+  <view class="mid">
+    <image class="share" src="../../images/home/question.png" bindtap="gotoFound"></image>
+    <text>答疑</text>
+  </view>
+  <view class="mid">
+    <image class="share" src="../../images/home/share.png" bindtap="gotoShare"></image>
+    <text>共享</text>
+  </view>
+</view>
+<!-- 推荐 -->
+<view class="container3">
+  <view class="c3text">
+    <text class="c3t1">精选推荐</text>
+    <image class="c3pic" src="../../images/more.png"></image>
+    <text class="c3t2" bindtap="gotoList" data-info="精选推荐">查看更多</text>
+  </view>
+  <view class="rec_book">
+    <view class="book" wx:for="{{recommend}}" wx:key="id" bindtap="gotoInfo" data-info="{{item.bookid}}">
+      <image src="{{item.img}}" class="img_book" mode="aspectFill"></image>
+      <text class="name_book">{{item.book_name}}</text>
+    </view>
+  </view>
+</view>
+<!-- 最新 -->
+<view class="container3">
+  <view class="c3text">
+    <text class="c3t1">最新上架</text>
+    <image class="c3pic" src="../../images/more.png"></image>
+    <text class="c3t2" bindtap="gotoList" data-info="最新上架">查看更多</text>
+  </view>
+  <view class="rec_book">
+    <view class="book" wx:for="{{newbook}}" wx:key="id" bindtap="gotoInfo" data-info="{{item.bookid}}">
+      <image src="{{item.img}}" class="img_book" mode="aspectFill"></image>
+      <text class="name_book">{{item.book_name}}</text>
+    </view>
+  </view>
+</view>

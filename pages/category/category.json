@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "onReachBottomDistance": 100,
+  "navigationBarBackgroundColor": "#99475a",
+  "navigationBarTitleText": "经典文学",
+  "navigationBarTextStyle": "white"
+}

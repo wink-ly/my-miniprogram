@@ -1,0 +1,23 @@
+<view class="main">
+  <view class="list1">
+    <view class="up">
+      <view class="title">
+        哈利波特系列
+        <view class="more">
+          <text bindtap="gotoList" data-info="哈利波特系列">查看全部</text>
+          <image class="img" src="../../images/more.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class="down">
+      <view class="book" wx:for="{{hari}}" wx:key="index" bindtap="gotoInfo" data-info="{{hari[index].bookid}}">
+        <image src="{{hari[index].img}}" class="img_book" mode="aspectFill"></image>
+        <text class="name_book">{{hari[index].book_name}}</text>
+      </view>
+    </view>
+
+  </view>
+  <view class="list1" style="display: flex;align-items: center;justify-content: center;">
+    敬请期待
+  </view>
+</view>

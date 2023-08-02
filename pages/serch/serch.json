@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-search": "../../miniprogram_npm/@vant/weapp/search/index"
+  },
+  "navigationBarTitleText": "搜索",
+  "navigationBarBackgroundColor": "#c84766",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

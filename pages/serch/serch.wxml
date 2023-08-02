@@ -1,0 +1,29 @@
+<!-- 搜索框 -->
+<view class="serch_input">
+  <van-search class="serch" shape="round" background="#c84766" placeholder="搜索书籍名称" focus bind:change="onChange" bind:search="onSearch" />
+</view>
+<!-- 搜索历史 -->
+<view class="historybox" wx:if="{{his_show}}">
+  <view class="historytitle">
+    <text style="color: #bfbfbf;">最近搜索</text>
+    <image src="../../images/home/trash.png" class="his_pic" bindtap="onClear"></image>
+  </view>
+  <view class="historylist">
+    <view class="list" wx:for="{{historylist}}" wx:key="i">
+      <text style="padding: 20rpx;" bindtap="search_his" data-value="{{item}}">{{item}}</text>
+    </view>
+  </view>
+</view>
+<!-- 搜索结果列表 -->
+<scroll-view wx:if="{{search_show}}">
+  <view class="book" wx:for="{{book}}" wx:key="id" bindtap="gotoInfo" data-info="{{item.bookid}}">
+    <image class="book_img" src="{{item.img}}" mode="aspectFill"></image>
+    <view class="info">
+      <text class="book_title">{{item.book_name}}</text>
+      <text class="book_pub" decode>【作者】&nbsp;{{item.author}}</text>
+      <text class="book_pub" decode>【出版社】{{item.publish}}</text>
+      <text class="book_idu" decode>&nbsp;&nbsp;&nbsp;{{item.introduction==null?'暂无简介':item.introduction}}</text>
+    </view>
+  </view>
+</scroll-view>
+<text class="nodata" wx:if="{{!search_show}}">啊哦 啥也没搜到</text>

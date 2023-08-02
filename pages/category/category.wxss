@@ -1,0 +1,94 @@
+.container {
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.left {
+  width: 20%;
+}
+
+.right {
+  width: 80%;
+  background-color: #ffffff;
+}
+
+.listname {
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.active {
+  color: #99475a;
+  background-color: #ffffff;
+}
+
+.active::before {
+  content: "";
+  display: block;
+  height: 100rpx;
+  width: 8rpx;
+  position: absolute;
+  background-color: #99475a
+}
+
+.shop-item {
+  display: flex;
+  padding: 15rpx;
+  margin: 15rpx;
+  border-radius: 15rpx;
+  border: 1rpx solid #efefef;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+
+.book_img {
+  width: 180rpx;
+  height: 250rpx;
+  display: block;
+  margin-left: 15rpx;
+  border-radius: 15rpx;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15rpx;
+  justify-content: space-around;
+  font-size: 26rpx;
+}
+
+.book_title {
+  width: 250rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  margin-left: 15rpx;
+  color: #99475a;
+}
+
+.book_author {
+  width: 300rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book_pub {
+  width: 330rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book_idu {
+  font-size: 23rpx;
+  margin-left: 10rpx;
+  width: 320rpx;
+  color: #707070;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
